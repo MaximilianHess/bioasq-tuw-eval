@@ -55,8 +55,7 @@ def average_precision(retrieved, relevant):
             score += num_hits / (i + 1)
     return score / min(len(relevant),10)
 
-def gmap(average_precision, epsilon = 1e-5):
-    epsilon = 1e-5
+def gmap(average_precision, epsilon = 0.00001):
     gmaps = [avg_p + epsilon for avg_p in average_precision]
     return round(np.exp(np.mean(np.log(gmaps))),4)
 
