@@ -1,0 +1,3 @@
+pred_path: dev/data/4-goldenbio.json
+batch: 4
+results_name: null       # if null, script will fall back to timestamp. Timetamp will always be added

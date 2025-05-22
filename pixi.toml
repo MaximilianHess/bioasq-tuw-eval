@@ -1,0 +1,15 @@
+[project]
+authors = ["Maximilian Hess <e12347554@student.tuwien.ac.at>"]
+channels = ["conda-forge"]
+name = "bioasq-tuw-eval"
+platforms = ["win-64", "linux-64", "osx-arm64", "osx-64"]
+version = "0.1.0"
+
+[tasks.eval]
+cmd = "python eval.py"
+
+[dependencies]
+python = ">=3.12, <3.13"
+pandas = ">=2.2.3,<3"
+ipykernel = ">=6.29.5,<7"
+pyyaml = ">=6.0.2,<7"

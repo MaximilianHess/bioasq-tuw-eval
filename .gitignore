@@ -1,0 +1,7 @@
+
+# pixi environments
+.pixi
+*.egg-info
+dev/
+results
+eval-dev.ipynb
